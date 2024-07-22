@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Function = () => {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(null);
     return (
         <div>
             <h1>INCREMENT: {count}</h1>
