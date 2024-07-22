@@ -1,6 +1,12 @@
 .bg{
   background-color: #90953b;
-  /* background-image: url(" "); */
-  /* height: 65px;
-  width: 100%; */
+}
+
+.nave{
+  
+  background-color: red;
+  
+/* margin-left: 100px; */
+/* text-indent: 90px; */
+/* float: left; */
 }

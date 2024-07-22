@@ -1,20 +1,19 @@
 import './App.css';
-
-import Header from './Header';
-
-
-
-
+import Class from './Class';
+import Function from './Function';
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <Class />
+    <hr></hr>
+    <hr></hr>
+    
+      <Function  />
+    </> 
 
 
-      <Header />
 
-       
-    </div>
   );
 }
 
