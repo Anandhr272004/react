@@ -1,15 +1,17 @@
 import './App.css';
 import Class from './Class';
+import Form from './Form';
 import Function from './Function';
 
 function App() {
   return (
     <>
-    <Class />
+{/* <Class />
     <hr></hr>
     <hr></hr>
+    <Function  /> */}
     
-      <Function  />
+      <Form />
     </> 
 
   );
