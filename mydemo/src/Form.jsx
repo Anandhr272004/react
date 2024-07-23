@@ -22,6 +22,7 @@ const Form = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <div>
+          <h3>Form Validation</h3>
           <label>
             Name:
             <input type="text" value={input1} onChange={(e) => setInput1(e.target.value)} />
@@ -30,34 +31,23 @@ const Form = () => {
         <div>
           <label>
             Age:
-            <input
-              type="text"
-              value={input2}
-              onChange={(e) => setInput2(e.target.value)}
-            />
+            <input type="text" value={input2} onChange={(e) => setInput2(e.target.value)} />
           </label>
         </div>
         <div>
           <label>
             Email id:
-            <input
-              type="text"
-              value={input3}
-              onChange={(e) => setInput3(e.target.value)}
-            />
+            <input type="text" value={input3} onChange={(e) => setInput3(e.target.value)} />
           </label>
         </div>
         <div>
           <label>
             Contact:
-            <input
-              type="text"
-              value={input4}
-              onChange={(e) => setInput4(e.target.value)}
+            <input type="text" value={input4} onChange={(e) => setInput4(e.target.value)}
             />
           </label>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" >Submit</button>
       </form>
     </div>
   );
