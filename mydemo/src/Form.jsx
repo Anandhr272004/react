@@ -12,10 +12,10 @@ const Form = () => {
   const handleSubmit = (e) => {
     // Prevent Page Reload: By calling e.preventDefault(), prevent the browser from reloading the page.
     e.preventDefault();
-    console.log('Input 1:', input1);
-    console.log('Input 2:', input2);
-    console.log('Input 3:', input3);
-    console.log('Input 4:', input4);
+    console.log('Name:', input1);
+    console.log('Age:', input2);
+    console.log('Email-ID:', input3);
+    console.log('Contact:', input4);
   };
 
   return (
@@ -24,11 +24,7 @@ const Form = () => {
         <div>
           <label>
             Name:
-            <input
-              type="text"
-              value={input1}
-              onChange={(e) => setInput1(e.target.value)}
-            />
+            <input type="text" value={input1} onChange={(e) => setInput1(e.target.value)} />
           </label>
         </div>
         <div>
