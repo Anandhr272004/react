@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import {useState} from 'react';
 
 const Form = () => {
-  // State hooks for each input field
+  // useState hooks for each input field
+
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
   const [input3, setInput3] = useState('');
   const [input4, setInput4] = useState('');
 
-  // Function to handle form submission
+  // Function for form submission
   const handleSubmit = (e) => {
+    // Prevent Page Reload: By calling e.preventDefault(), prevent the browser from reloading the page.
     e.preventDefault();
     console.log('Input 1:', input1);
     console.log('Input 2:', input2);
@@ -21,7 +23,7 @@ const Form = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>
-            Input 1:
+            Name:
             <input
               type="text"
               value={input1}
@@ -31,7 +33,7 @@ const Form = () => {
         </div>
         <div>
           <label>
-            Input 2:
+            Age:
             <input
               type="text"
               value={input2}
@@ -41,7 +43,7 @@ const Form = () => {
         </div>
         <div>
           <label>
-            Input 3:
+            Email id:
             <input
               type="text"
               value={input3}
@@ -51,7 +53,7 @@ const Form = () => {
         </div>
         <div>
           <label>
-            Input 4:
+            Contact:
             <input
               type="text"
               value={input4}
