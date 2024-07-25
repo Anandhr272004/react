@@ -1,6 +1,7 @@
 import './App.css';
 // import Class from './Class';
-import Form from './Form';
+// import Form from './Form';
+import Object from './Object';
 // import Frm from './Frm';
 // import Function from './Function';
 
@@ -12,7 +13,8 @@ function App() {
     <hr></hr>
     <Function  /> */}
     {/* <Frm /> */}
-      <Form />
+      {/* <Form /> */}
+      <Object />
       
     </> 
 
