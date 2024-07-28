@@ -5,8 +5,10 @@ import Col from 'react-bootstrap/Col';
 
 const Formhooks = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const handleRegistration = (data) => console.log(data);
-  
+
+  const handleRegistration = (data) => 
+    console.log(data)
+
   const registerOptions = {
     name: { required: "Name is required",
       pattern: {
@@ -78,6 +80,7 @@ const Formhooks = () => {
         <div className="text-danger">
           {errors?.name && errors.name.message}
         </div>
+        
       </div></Col>
         <Col>
         <div>
