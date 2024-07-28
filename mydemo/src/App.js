@@ -1,24 +1,25 @@
 import './App.css';
-import Counter from './Counter';
+import Formhooks from './Form-hooks';
+// import Counter from './Counter';
 // import Class from './Class';
 // import Form from './Form';
+
 // import Object from './Object';
 // import Frm from './Frm';
 // import Function from './Function';
-import Effect from './Effect';
+// import Effect from './Effect';
 
 function App() {
   return (
     <>
-{/* <Class />
-    <hr></hr>
-    <hr></hr>
-    <Function  /> */}
-    {/* <Frm /> */}
+{/* <Class /> */}
+    {/* <Function  /> */}
+    {/* <Frm /> */}   
       {/* <Form /> */}
+      <Formhooks/>
       {/* <Object /> */}
       {/* <Counter /> */}
-      <Effect/>
+      {/* <Effect/> */}
     </>
 
   );

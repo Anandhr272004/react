@@ -1,12 +1,127 @@
-.bg{
-  background-color: #90953b;
+.container {
+  max-width: 700px;
+  width: 100%;
+  /* background-color: #fff; */
+  padding: 25px 30px;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 5px 10px rgba(0,0,0,0.15); */
+  font-family: 'Poppins', sans-serif;
+
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.nave{
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   
-  background-color: red;
-  
-/* margin-left: 100px; */
-/* text-indent: 90px; */
-/* float: left; */
+  background-image: url("C:\Users\Admin\OneDrive\Pictures\mountain.jpg");
+  background-size: cover;
+
+}
+
+.button {
+  height: 45px;
+  /* margin: 35px ; */
+  /* background: linear-gradient(-135deg,#fdeb82, #f78fad); */
+
+  /* .form-submit-button { */
+  /* background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 100px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none; */
+  /* } */
+  background-color: #3498db;
+  /* Primary color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+}
+
+.button {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+/* .details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -20px  0px 0;
+    font-weight: 500;
+    margin-bottom: 5px;
+} */
+.title {
+  font-size: 35px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 20px;
+
+}
+
+.input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  border-color: #fdeb82;
+
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 60px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ff0f53, #fdeb82);
+}
+
+.rad {
+  margin-top: -5px;
+}
+
+.radi {
+  margin-left: 15px;
+}
+
+.check {
+  margin-top: 10px;
+  padding-left: 10px;
 }

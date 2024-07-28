@@ -1,67 +1,45 @@
+import React from 'react';
+import { useForm } from 'react-hook-form';
 
-      // <------Form using useState---------->
+const Form = () => {
+  const { register, handleSubmit, errors } = useForm();
 
-// import {useState} from 'react';
+  const onSubmit = async (data) => {
+    // Call API or perform login logic here
+    console.log(data);
+  };
 
-// const Form = () => {
-//   // useState hooks for each input field
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <label>Username:</label>
+      <input
+        type="text"
+        {...register('username', {
+          required: 'Username is required',
+          minLength: {
+            value: 3,
+            message: 'Username must be at least 3 characters',
+          },
+        })}
+      />
+      {errors.username && <div>{errors.username.message}</div>}
 
-//   const [input1, setInput1] = useState('');
-//   const [input2, setInput2] = useState('');
-//   const [input3, setInput3] = useState('');
-//   const [input4, setInput4] = useState('');
+      <label>Password:</label>
+      <input
+        type="password"
+        {...register('password', {
+          required: 'Password is required',
+          minLength: {
+            value: 8,
+            message: 'Password must be at least 8 characters',
+          },
+        })}
+      />
+      {errors.password && <div>{errors.password.message}</div>}
 
-//   // Function for form submission
-//   const handleSubmit = (e) => {
+      <button type="submit">Login</button>
+    </form>
+  );
+};
 
-//     // Prevent Page Reload:    By calling e.preventDefault(), prevent the browser from reloading the page.
-    
-//     e.preventDefault();
-//     console.log('Name:', input1);
-//     console.log('Age:', input2);
-//     console.log('Email-ID:', input3);
-//     console.log('Contact:', input4);
-//   };
-
-//   return (
-//     <div>
-//       <form onSubmit={handleSubmit}>
-//         <div>
-//           <h3>Form Validation</h3>
-//           <label>
-//             Name:
-//             <input type="text" value={input1} onChange={(e) => setInput1(e.target.value)} />
-//           </label>
-//         </div>
-//         <div>
-//           <label>
-//             Age:
-//             <input type="text" value={input2} onChange={(e) => setInput2(e.target.value)} />
-//           </label>
-//         </div>
-//         <div>
-//           <label>
-//             Email id:
-//             <input type="text" value={input3} onChange={(e) => setInput3(e.target.value)} />
-//           </label>
-//         </div>
-//         <div>
-//           <label>
-//             Contact:
-//             <input type="text" value={input4} onChange={(e) => setInput4(e.target.value)}
-//             />
-//           </label>
-//         </div>
-//         <button type="submit" >Submit</button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default Form;
-
-
-
-
-
-  
+export default Form;
