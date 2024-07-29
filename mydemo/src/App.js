@@ -43,14 +43,13 @@ function App() {
       <p>Password: ${data.password}</p>
       <p>Confirm Password: ${data.cpassword}</p>
       <p>Gender: ${data.gender}</p>
-      <p>Terms and Conditions: ${data.terms}</p>
-    `;
+      <p>Terms and Conditions: ${data.terms}</p>`;
   };
 
   return (
     <div>
       <Formhooks onSubmit={handleFormData} />
-      <div id="form-data"></div>
+      <div id="form-data"style={{ color: 'white' }}></div>
     </div>
   );
 }

@@ -134,7 +134,7 @@ const Formhooks = (props) => {
                 name="password"
                 className="input"
                 placeholder="Enter your password"
-                {...register('cpassword', registerOptions.cpassword)} /><br />
+                {...register('password', registerOptions.cpassword)} /><br />
               <div className="text-danger">
                 {errors?.password && errors.password.message}
               </div>
