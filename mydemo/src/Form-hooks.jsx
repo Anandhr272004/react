@@ -79,7 +79,7 @@ const Formhooks = (props) => {
         <div class="user-details">
 
           <Row>
-            <Col><div>
+            <Col xs={12} md={6}><div>
               <label className="details">Name</label>
               <input name="name" type="text" className="input" placeholder="Enter your name" {...register('name', registerOptions.name)} /><br />
               <div className="text-danger">
@@ -87,7 +87,7 @@ const Formhooks = (props) => {
               </div>
 
             </div></Col>
-            <Col>
+            <Col xs={12} md={6}>
               <div>
                 <label className="details">UserName</label>
                 <input
@@ -101,7 +101,7 @@ const Formhooks = (props) => {
                 </div>
               </div></Col></Row><br />
           <Row>
-            <Col><div>
+            <Col xs={12} md={6}><div>
               <label className="details">Email</label>
               <input
                 type="email"
@@ -113,7 +113,7 @@ const Formhooks = (props) => {
                 {errors?.email && errors.email.message}
               </div>
             </div></Col>
-            <Col><div>
+            <Col xs={12} md={6}><div>
               <label className="details">Phone Number</label>
               <input
                 type="text"
@@ -127,7 +127,7 @@ const Formhooks = (props) => {
             </div></Col></Row>
           <br />
           <Row>
-            <Col><div>
+            <Col xs={12} md={6}><div>
               <label className="details">Password</label>
               <input
                 type="password"
@@ -139,7 +139,7 @@ const Formhooks = (props) => {
                 {errors?.password && errors.password.message}
               </div>
             </div></Col>
-            <Col><div>
+            <Col xs={12} md={6}><div>
               <label className="details">Confirm Password</label>
               <input
                 type="password"
@@ -155,6 +155,7 @@ const Formhooks = (props) => {
           <br />
         </div>
         <Row>
+          <Col  xs={12}>
           <label className="rad">Gender :
             <input type="radio" name="gender" className="radi" value="male" {...register('gender', registerOptions.gender)} />Male
             <input type="radio" name="gender" className="radi" value="female" {...register('gender', registerOptions.gender)} />Female
@@ -163,9 +164,10 @@ const Formhooks = (props) => {
           <div className="text-danger">
             {errors?.gender && errors.gender.message}
           </div>
+          </Col>
         </Row>
 
-        <Col>
+        <Col  xs={12}>
           <div>
             <label>
               <input
