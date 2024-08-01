@@ -1,7 +1,8 @@
 import './App.css';
+import Getmethod from './Getmethod';
 // import Formhooks from './Form-hooks';
 // import Usereduser from './Usereduser';
-import Useref from './Useref';
+// import Useref from './Useref';
 // import Counter from './Counter';
 // import Class from './Class';
 // import Form from './Form';
@@ -19,7 +20,8 @@ function App() {
       
       {/* <Formhooks   /> */}
       {/* <Usereduser/> */}
-      <Useref/>
+      {/* <Useref/> */}
+      <Getmethod/>
       {/* <Object /> */}
       {/* <Counter /> */}
       {/* <Effect/> */}
