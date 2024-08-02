@@ -7,6 +7,7 @@ const Useref = () => {
     const focusInput = () => {
         inputElement.current.focus();
     };
+
     //2nd input field
     const input = useRef();
 
@@ -21,7 +22,7 @@ const Useref = () => {
 
             {/* 2nd input field */}
             <input type="password" ref={input} />
-            <button onClick={focusI}> Click to Focus Input</button>
+            <button onClick={focusI}> Click to Focus  the Input</button>
         </>
     );
 }
