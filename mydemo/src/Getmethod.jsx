@@ -59,9 +59,10 @@ const Getmethod = () => {
     const getdata = async () => {
         setLoading(true);
         try {
-            const response1 = await fetch("https://reqres.in/api/users?delay=2");
-            const jsonData1 = await response1.json();
-            setValue(jsonData1.data);
+            const response = await fetch("https://reqres.in/api/users?delay=2");
+            const jsonData = await response.json();
+            setValue(jsonData.data);
+            console.log(value);
 
         } catch (error) {
             setError(error.message);
@@ -69,6 +70,7 @@ const Getmethod = () => {
             setLoading(false);
         }
     };
+    
 
     return (
         <div>
