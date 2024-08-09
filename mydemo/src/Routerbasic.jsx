@@ -21,13 +21,14 @@ const Products = () => (
   </div>
 );
 
+
 export default function Nav() {
   return (
     <div>
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/home">Home</Link>
           </li>
           <li>
             <Link to="/categories">Categories</Link>
@@ -37,9 +38,9 @@ export default function Nav() {
           </li>
         </ul>
       </nav>
-
+      
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/products" element={<Products />} />
       </Routes>

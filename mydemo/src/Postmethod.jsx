@@ -25,10 +25,10 @@ const generateToken = () => {
     setResponseData(null);
 
     // Check if the credentials match predefined ones
-    const predefinedEmail = 'mailto:eve.holt@reqres.in';
-    const predefinedPassword = 'pistol';
+    // const predefinedEmail = 'mailto:eve.holt@reqres.in';
+    // const predefinedPassword = 'pistol';
 
-    if (data.email === predefinedEmail && data.password === predefinedPassword) {
+    // if (data.email === predefinedEmail && data.password === predefinedPassword) {
       try {
         const response = await fetch('https://reqres.in/api/register', {
           method: 'POST',
@@ -50,15 +50,18 @@ const generateToken = () => {
         setApiError(`Registration failed. Please try again. Error: ${error.message}`);
         console.error('Error:', error);
       }
-    } else {
+    // }
+    //  else {
       // Simulate a success response with a unique ID and token
+      
       const simulatedResponse = {
         id: Math.floor(Math.random() * 1000),
         token: generateToken()  // Generate a new token for each submission
       };
       console.log(' Response Data:', simulatedResponse);
       setResponseData(simulatedResponse);
-    }
+
+    // }
 
     setLoading(false);
     reset();
