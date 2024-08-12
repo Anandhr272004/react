@@ -1,11 +1,13 @@
 
 import './App.css';
 
-// import Indexone from './Indexone';
+import Indexone from './Indexone';
 // import Model from './Model';
 // import Context from './Context';
 // import Postmethod from './Postmethod';
 import Nav from './Routerbasic';
+import UseReducerone from './Usereduserone';
+
 // import Postmethodone from './Postmethodone';
 // import Getmethod from './Getmethod';
 // import Formhooks from './Form-hooks';
@@ -35,7 +37,8 @@ function App() {
      {/* <Postmethodone/> */}
      {/* <Model /> */}
      {/* <Indexone/> */}
-     <Nav/>
+     <UseReducerone/>
+     {/* <Nav/> */}
   
       {/* <Object /> */}
       {/* <Counter /> */}
