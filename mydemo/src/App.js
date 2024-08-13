@@ -15,6 +15,7 @@ import Cityes from './Cityes';
 import Getone from './Getone';
 import Routerone from './Routerone';
 import Ref from './Ref';
+import Model from './Model';
 function App() {
 
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <CityDrop/> */}
       {/* <Getone/> */}
       {/* <Routerone/> */}
-      <Ref />
+      {/* <Ref /> */}
+      <Model />
      {/* <Cityes/> */}
      </div>
      

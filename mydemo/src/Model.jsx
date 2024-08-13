@@ -7,15 +7,19 @@ import Col from 'react-bootstrap/Col';
 
 const Model = () => {
     // console.log(user);
+
+    const state={
+        tn:["erode","cbe","tripur"],
+        kl:["tiru","cochin","palakad"]
+    };
+    console.log( Object.keys(state));
     return (
 
         <div >
-            {/* {user.map((item) => (
-        <div key={item.id}>
-          <h2>{item.title}</h2>
-          <p>{item.id}</p>
-        </div>
-      ))}  */}
+         
+    
+
+          
 
 
             <Row>

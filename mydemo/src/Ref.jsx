@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-const Ref=()=>{
+const Ref=(props)=>{
 
     const input=useRef("");
     const button=()=>{
@@ -11,6 +11,7 @@ const Ref=()=>{
         <>
         <input type="text" ref={input}/>
         <button onClick={button}>click</button>
+        <p></p>
         </>
     )
 
