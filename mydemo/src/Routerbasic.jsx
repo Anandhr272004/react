@@ -15,10 +15,12 @@ const Categories = () => (
 );
 
 const Products = () => (
+
   <div>
     <h2>Products</h2>
     <p>Browse individual products.</p>
   </div>
+  
 );
 
 

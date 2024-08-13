@@ -12,6 +12,9 @@ import Counter from './Counterredux';
 import City from './City';
 import CityDrop from './CityDrop';
 import Cityes from './Cityes';
+import Getone from './Getone';
+import Routerone from './Routerone';
+import Ref from './Ref';
 function App() {
 
   return (
@@ -19,7 +22,10 @@ function App() {
      <div className='App'>
      {/* <Counter /> */}
      {/* <City/> */}
-      <CityDrop/>
+      {/* <CityDrop/> */}
+      {/* <Getone/> */}
+      {/* <Routerone/> */}
+      <Ref />
      {/* <Cityes/> */}
      </div>
      
