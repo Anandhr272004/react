@@ -4,10 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from './app/Slice';
 
 const Counter = () => {
-  // Get the current count from the Redux store
   const count = useSelector((state) => state.counter.value);
   
-  // Get the dispatch function
   const dispatch = useDispatch();
 
   return (

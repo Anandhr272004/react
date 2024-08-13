@@ -9,12 +9,18 @@ import Nav from './Routerbasic';
 import UseReducerone from './Usereduserone';
 
 import Counter from './Counterredux';
+import City from './City';
+import CityDrop from './CityDrop';
+import Cityes from './Cityes';
 function App() {
 
   return (
     <>
      <div className='App'>
-     <Counter />
+     {/* <Counter /> */}
+     {/* <City/> */}
+      <CityDrop/>
+     {/* <Cityes/> */}
      </div>
      
      
