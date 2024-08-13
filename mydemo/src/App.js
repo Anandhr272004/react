@@ -8,41 +8,17 @@ import Indexone from './Indexone';
 import Nav from './Routerbasic';
 import UseReducerone from './Usereduserone';
 
-// import Postmethodone from './Postmethodone';
-// import Getmethod from './Getmethod';
-// import Formhooks from './Form-hooks';
-// import Usereduser from './Usereduser';
-// import Useref from './Useref';
-// import Counter from './Counter';
-// import Class from './Class';
-// import Form from './Form';
-// import Object from './Object';
-// import Function from './Function';
-// import Effect from './Effect';
-
+import Counter from './Counterredux';
 function App() {
 
   return (
     <>
-      {/* <Class /> */}
-      {/* <Function  /> */}
-      {/* <Form /> */}
-      
-      {/* <Formhooks   /> */}
-      {/* <Usereduser/> */}
-      {/* <Useref/> */}
-      {/* <Getmethod/> */}
-      {/* <Context/> */}
-      {/* <Postmethod/> */}
-     {/* <Postmethodone/> */}
-     {/* <Model /> */}
-     {/* <Indexone/> */}
-     <UseReducerone/>
-     {/* <Nav/> */}
-  
-      {/* <Object /> */}
-      {/* <Counter /> */}
-      {/* <Effect/> */}
+     <div className='App'>
+     <Counter />
+     </div>
+     
+     
+   
     </>
 
   );
