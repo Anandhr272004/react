@@ -12,9 +12,9 @@ function City() {
   return (
     <div>
       <select value={City} onChange={(e) => setCity(e.target.value)}>
-       {cities.map((City) => (
+       {cities.map((Citye) => (
         <option>
-            {City}
+            {Citye}
           </option>
                   ))}
        </select>

@@ -70,7 +70,6 @@ const Getmethod = () => {
             setLoading(false);
         }
     };
-    
 
     return (
         <div>

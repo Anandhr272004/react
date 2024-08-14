@@ -5,22 +5,24 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 // import Routerone from './Routerone';
+import Todo from './Todo';
 import { Provider } from 'react-redux';
-import store from './app/Store';
+import Store from './Appone/Store';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
+  {/* <BrowserRouter> */}
     {/* <Routerone /> */}
   
-   <Provider store={store}>
+   <Provider store={Store}>
   <React.StrictMode>
     <App />
+    {/* <Todo/> */}
   </React.StrictMode>
   </Provider>
-  </BrowserRouter>
+  {/* </BrowserRouter> */}
 </React.StrictMode>,
   document.getElementById('root')
 );

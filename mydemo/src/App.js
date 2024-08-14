@@ -16,18 +16,20 @@ import Getone from './Getone';
 import Routerone from './Routerone';
 import Ref from './Ref';
 import Model from './Model';
+import Todo from './Todo';
 function App() {
 
   return (
     <>
      <div className='App'>
      {/* <Counter /> */}
-     {/* <City/> */}
+     <City/>
       {/* <CityDrop/> */}
       {/* <Getone/> */}
       {/* <Routerone/> */}
       {/* <Ref /> */}
-      <Model />
+      {/* <Model /> */}
+      {/* <Todo/> */}
      {/* <Cityes/> */}
      </div>
      

@@ -14,15 +14,7 @@ const Model = () => {
     };
     console.log( Object.keys(state));
     return (
-
-        <div >
-         
-    
-
-          
-
-
-            <Row>
+        <div><Row>
                 { user.map((item) => (
                     <Col lg={11} md={6} xs={12} key={item.id} >
                         {/* <div key={item}> */}
