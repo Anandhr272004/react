@@ -50,8 +50,8 @@ const UseRed = () => {
 
         
             <ul>
-                {state.items.map((oneitems, index) => (
-                    <li key={index}>
+                {state.items.map((oneitems) => (
+                    <li>
                         {oneitems}
                         <button onClick={() => removeitems(oneitems)}>Remove</button>
                         </li>

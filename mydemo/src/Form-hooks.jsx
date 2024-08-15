@@ -3,13 +3,12 @@ import { useForm } from "react-hook-form";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const Formhooks = (props) => {
+const Formhooks = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const handleRegistration = (data) =>{
-    // console.log(data);
-  props.onSubmit(data);
-} 
+  const handleRegistration = (data) => {
+    console.log(data);
+  }
 
   const registerOptions = {
     name: {
@@ -155,19 +154,19 @@ const Formhooks = (props) => {
           <br />
         </div>
         <Row>
-          <Col  xs={12}>
-          <label className="rad">Gender :
-            <input type="radio" name="gender" className="radi" value="male" {...register('gender', registerOptions.gender)} />Male
-            <input type="radio" name="gender" className="radi" value="female" {...register('gender', registerOptions.gender)} />Female
-            <input type="radio" name="gender" className="radi" value="other" {...register('gender', registerOptions.gender)} />Other
-          </label>
-          <div className="text-danger">
-            {errors?.gender && errors.gender.message}
-          </div>
+          <Col xs={12}>
+            <label className="rad">Gender :
+              <input type="radio" name="gender" className="radi" value="male" {...register('gender', registerOptions.gender)} />Male
+              <input type="radio" name="gender" className="radi" value="female" {...register('gender', registerOptions.gender)} />Female
+              <input type="radio" name="gender" className="radi" value="other" {...register('gender', registerOptions.gender)} />Other
+            </label>
+            <div className="text-danger">
+              {errors?.gender && errors.gender.message}
+            </div>
           </Col>
         </Row>
 
-        <Col  xs={12}>
+        <Col xs={12}>
           <div>
             <label>
               <input

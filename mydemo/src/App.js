@@ -7,7 +7,6 @@ import Indexone from './Indexone';
 // import Postmethod from './Postmethod';
 import Nav from './Routerbasic';
 import UseReducerone from './Usereduserone';
-
 import Counter from './Counterredux';
 import City from './City';
 import CityDrop from './CityDrop';
@@ -19,26 +18,35 @@ import Model from './Model';
 import Todo from './Todo';
 import ComponentsA from './ComponentA';
 import UseRed from './UseRed';
+import ToggleButton from './Usest';
+// import Usesttodo from './Usesttodo';
+import Formhooks from './Form-hooks';
+import Form from './Form';
+import Frm from './Frm';
+import Usestate from './Usestate';
+
 function App() {
 
   return (
     <>
-     <div className='App'>
+    
      {/* <Counter /> */}
      {/* <City/> */}
       {/* <CityDrop/> */}
       {/* <ComponentsA /> */}
       {/* <UseReducerone /> */}
-      <UseRed />
+      {/* <UseRed /> */}
+      {/* <ToggleButton/> */}
+      {/* <Usesttodo /> */}
+      {/* <Formhooks /> */}
+      {/* <Form /> */}
+      <Frm />
+      {/* <Usestate/> */}
       {/* <Routerone/> */}
       {/* <Ref /> */}
       {/* <Model /> */}
       {/* <Todo/> */}
      {/* <Cityes/> */}
-     </div>
-     
-     
-   
     </>
 
   );

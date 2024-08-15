@@ -2,10 +2,9 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const Form = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const onSubmit = async (data) => {
-    // Call API or perform login logic here
+  const onSubmit = (data) => {
     console.log(data);
   };
 
@@ -13,8 +12,7 @@ const Form = () => {
     <form onSubmit={handleSubmit(onSubmit)}>
       <label>Username:</label>
       <input
-        type="text"
-        {...register('username', {
+        type="text" {...register('username', {
           required: 'Username is required',
           minLength: {
             value: 3,
