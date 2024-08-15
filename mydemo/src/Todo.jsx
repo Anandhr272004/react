@@ -70,6 +70,7 @@ function Todo() {
               Name: {user.name} <br /> Email-id: {user.email} <br /> Age: {user.age} years old
             </span>
             <br />
+            
             <button onClick={() => dispatch(removeUser(user.id))}>Delete</button>
           </li>
         ))}

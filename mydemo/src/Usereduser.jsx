@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 
-const initialstate={
-    count:0
+const initialstate = {
+    count: 0
 }
 const reducer = (state, action) => {
     switch (action.type) {
@@ -34,20 +34,20 @@ const Usereduser = () => {
     };
     const decrement = () => {
         dispatch({ type: 'decrement' });
-    
-};
+
+    };
     const reset = () => {
         dispatch({ type: 'reset' });
-    
-};
-return (
-    <div>
-        <p>Count: {state.count}</p>
-        <button onClick={increment}>+</button>
-        <button onClick={decrement}>-</button>
-        <button onClick={reset}>reset</button>
-    </div>
-);
+
+    };
+    return (
+        <div>
+            <p>Count: {state.count}</p>
+            <button onClick={increment}>+</button>
+            <button onClick={decrement}>-</button>
+            <button onClick={reset}>reset</button>
+        </div>
+    );
 };
 
 export default Usereduser;

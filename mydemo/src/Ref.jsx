@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-const Ref=(props)=>{
+const Ref=()=>{
 
     const input=useRef("");
     const button=()=>{

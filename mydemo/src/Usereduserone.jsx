@@ -26,13 +26,13 @@ const UseReducerone= () => {
 
   const handleAddItem = () => {
     if (newItem.trim()) {
-      dispatch({ type: 'ADD_ITEM', payload: newItem });
+      dispatch({ type: 'ADD_ITEM',payload:newItem });
       setNewItem('');
     }
   };
 
-  const handleRemoveItem = (item) => {
-    dispatch({ type: 'REMOVE_ITEM', payload: item });
+  const handleRemoveItem = (itemone) => {
+    dispatch({ type: 'REMOVE_ITEM', payload: itemone });
   };
 
   const handleResetList = () => {
@@ -41,19 +41,17 @@ const UseReducerone= () => {
 
   return (
     <div>
-      <input
-        type="text"
-        value={newItem}
-        onChange={(e) => setNewItem(e.target.value)}
+      <input type="text"  value={newItem} onChange={(e) => setNewItem(e.target.value)}
         placeholder="Enter item"
       />
       <button onClick={handleAddItem}>Add Item</button>
+
       <button onClick={handleResetList}>Reset List</button>
       <ul>
-        {state.items.map((item, index) => (
+        {state.items.map((itemone, index) => (
           <li key={index}>
-            {item}
-            <button onClick={() => handleRemoveItem(item)}>  --Remove</button>
+            {itemone}
+            <button onClick={() => handleRemoveItem(itemone)}>  --Remove</button>
           </li>
         ))}
       </ul>

@@ -17,15 +17,19 @@ import Routerone from './Routerone';
 import Ref from './Ref';
 import Model from './Model';
 import Todo from './Todo';
+import ComponentsA from './ComponentA';
+import UseRed from './UseRed';
 function App() {
 
   return (
     <>
      <div className='App'>
      {/* <Counter /> */}
-     <City/>
+     {/* <City/> */}
       {/* <CityDrop/> */}
-      {/* <Getone/> */}
+      {/* <ComponentsA /> */}
+      {/* <UseReducerone /> */}
+      <UseRed />
       {/* <Routerone/> */}
       {/* <Ref /> */}
       {/* <Model /> */}

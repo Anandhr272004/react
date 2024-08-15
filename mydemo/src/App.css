@@ -104,3 +104,8 @@ body {
 /* .item{
   background-color: red;
 } */
+
+.Box{
+  border: 2px solid;
+  padding: 20px;
+}
