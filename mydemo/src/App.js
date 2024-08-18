@@ -28,6 +28,7 @@ import Useref from './Useref';
 import ToggleText from './ustate/ToggleText';
 import Todoust from './ustate/Todoust';
 import Timer from './ustate/Timer';
+import Click from './ustate/Click';
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
       <ToggleText/>
       <Todoust/>
       <Timer/>
+      <Click/>
       {/* <ToggleButton/> */}
       {/* <Usesttodo /> */}
       {/* <Formhooks /> */}

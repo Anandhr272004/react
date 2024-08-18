@@ -4,7 +4,9 @@ function ToggleText() {
     // Step 2: State management
     const [isVisible, setIsVisible] = useState(true);
 
-    // Step 4: Button click handler
+    const [isChecked, setIsChecked] = useState(false);
+
+   
     const toggleVisibility = () => {
         setIsVisible(!isVisible);
     };
@@ -15,6 +17,14 @@ function ToggleText() {
             <button onClick={toggleVisibility}>
                 {isVisible ? 'Hide Text' : 'Show Text'}
             </button>
+
+
+            <input type="checkbox" checked={isChecked}
+                onChange={() => setIsChecked(!isChecked)} />
+
+            <p>Toggle: {isChecked ? 'On' : 'Off'}</p>
+
+          
         </div>
     );
 
