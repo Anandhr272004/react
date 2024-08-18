@@ -12,7 +12,7 @@ const Useref = () => {
     const input = useRef();
 
     const focusI = () => {
-        input.current.focus();
+        input.current.style.background="red";
     };
 
     return (

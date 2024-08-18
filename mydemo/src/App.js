@@ -24,6 +24,10 @@ import Formhooks from './Form-hooks';
 import Form from './Form';
 import Frm from './Frm';
 import Usestate from './Usestate';
+import Useref from './Useref';
+import ToggleText from './ustate/ToggleText';
+import Todoust from './ustate/Todoust';
+import Timer from './ustate/Timer';
 
 function App() {
 
@@ -35,12 +39,16 @@ function App() {
       {/* <CityDrop/> */}
       {/* <ComponentsA /> */}
       {/* <UseReducerone /> */}
+      {/* <Useref/> */}
       {/* <UseRed /> */}
+      <ToggleText/>
+      <Todoust/>
+      <Timer/>
       {/* <ToggleButton/> */}
       {/* <Usesttodo /> */}
       {/* <Formhooks /> */}
       {/* <Form /> */}
-      <Frm />
+      {/* <Frm /> */}
       {/* <Usestate/> */}
       {/* <Routerone/> */}
       {/* <Ref /> */}

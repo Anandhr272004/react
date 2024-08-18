@@ -5,6 +5,7 @@ const Ref=()=>{
     const input=useRef("");
     const button=()=>{
         input.current.focus();
+        
     }
 
     return(

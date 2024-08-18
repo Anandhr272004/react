@@ -7,10 +7,11 @@ function Usesttodo() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (newTodo.trim() !== '') {
-      setTodos([...todos, { id: Date.now(),text:newTodo }]);
+    // if (newTodo.trim() !== '')
+      //  {
+      setTodos(...todos, { id: Date.now(),text:newTodo });
       setNewTodo('');
-    }
+    // }
   };
 
   const handleRemove = (id) => {

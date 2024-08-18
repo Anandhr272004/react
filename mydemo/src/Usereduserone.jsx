@@ -4,7 +4,6 @@ const initialState = {
   items: []
 };
 
-// Reducer function
 function listReducer(state, action) {
   switch (action.type) {
     case 'ADD_ITEM':
@@ -23,10 +22,10 @@ const UseReducerone= () => {
   const [newItem, setNewItem] = useState('');
 
   const handleAddItem = () => {
-    if (newItem.trim()) {
+    // if (newItem.trim()) {
       dispatch({ type: 'ADD_ITEM',payload:newItem });
       setNewItem('');
-    }
+    // }
   };
 
   const handleRemoveItem = (itemone) => {
@@ -49,7 +48,7 @@ const UseReducerone= () => {
         {state.items.map((itemone, index) => (
           <li key={index}>
             {itemone}
-            <button onClick={() => handleRemoveItem(itemone)}>  --Remove</button>
+            <button onClick={() => handleRemoveItem(itemone)}>  --Remove--</button>
           </li>
         ))}
       </ul>
