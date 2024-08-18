@@ -1,7 +1,5 @@
-
 import React, { useReducer,useState } from 'react';
 
-// Initial state
 const initialState = {
   items: []
 };
