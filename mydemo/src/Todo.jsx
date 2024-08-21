@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
@@ -13,7 +12,7 @@ function Todo() {
     dispatch(addUser(data));
     reset(); 
   };
-
+  
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>Todo-list</h1>

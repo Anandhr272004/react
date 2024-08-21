@@ -9,6 +9,7 @@ const Click = () => {
     const buttonclick = () => {
         clickref.current = clickref.current + 1;
         setClick(clickref.current);
+        // setClick(counter);
 
     }
     return (

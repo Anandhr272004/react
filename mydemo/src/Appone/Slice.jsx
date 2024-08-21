@@ -1,4 +1,3 @@
-
 import { createSlice } from '@reduxjs/toolkit';
 
 const todo = createSlice({
@@ -7,11 +6,11 @@ const todo = createSlice({
     reducers: {
         addUser: (state, action) => {
             state.push({
-                id: Date.now(),
+                // id: Date.now(),
                 name: action.payload.name,
                 email: action.payload.email,
                 age: action.payload.age,
-                completed: false,
+                // completed: false,
             });
         },
         toggleUser: (state, action) => {

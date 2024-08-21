@@ -11,7 +11,7 @@ const Cityes = () => {
         <div>
             <select
              
-            // value={City} onChange={(e)=>setCity(e.target.val)}
+            value={City} onChange={(e)=>setCity(e.target.val)}
             
             >
                 {town.map((town) => (

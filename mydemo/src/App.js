@@ -23,13 +23,15 @@ import ToggleButton from './Usest';
 import Formhooks from './Form-hooks';
 import Form from './Form';
 import Frm from './Frm';
-import Usestate from './Usestate';
+import Usestate from './ustate/Usestate';
 import Useref from './Useref';
 import ToggleText from './ustate/ToggleText';
 import Todoust from './ustate/Todoust';
 import Timer from './ustate/Timer';
 import Click from './ustate/Click';
-
+import { Routes,Route } from 'react-router-dom';
+import Home from './Redux-task/Home';
+import User from './Redux-task/Users';
 function App() {
 
   return (
@@ -42,10 +44,19 @@ function App() {
       {/* <UseReducerone /> */}
       {/* <Useref/> */}
       {/* <UseRed /> */}
-      <ToggleText/>
+    {/* <Todo/> */}
+      {/* <ToggleText/>
       <Todoust/>
       <Timer/>
-      <Click/>
+      <Click/> */}
+      
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/user" element={<User />} />
+      </Routes>
+    
+
       {/* <ToggleButton/> */}
       {/* <Usesttodo /> */}
       {/* <Formhooks /> */}

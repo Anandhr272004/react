@@ -34,7 +34,9 @@ const CityDrop = () => {
 
       <label>
         Select City:
-        <select disabled={!State}>
+        <select
+         disabled={!State}
+        >
           <option value>--Select City--</option>
           {cities.map((city) => (
             <option key={city} value={city}>
