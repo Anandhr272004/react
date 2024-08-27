@@ -8,7 +8,6 @@ function Timer() {
     let interval = null;
     if (isActive) {
       interval = setInterval(() => setSeconds(seconds => seconds + 1), 1000);
-      
     } else {
       clearInterval(interval);
     }

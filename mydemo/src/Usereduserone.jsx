@@ -1,4 +1,4 @@
-import React, { useReducer,useState } from 'react';
+import React, { useReducer, useState } from 'react';
 
 const initialState = {
   items: []
@@ -17,14 +17,14 @@ function listReducer(state, action) {
   }
 }
 
-const UseReducerone= () => {
+const UseReducerone = () => {
   const [state, dispatch] = useReducer(listReducer, initialState);
   const [newItem, setNewItem] = useState('');
 
   const handleAddItem = () => {
     // if (newItem.trim()) {
-      dispatch({ type: 'ADD_ITEM',payload:newItem });
-      setNewItem('');
+    dispatch({ type: 'ADD_ITEM', payload: newItem });
+    setNewItem('');
     // }
   };
 
@@ -38,7 +38,7 @@ const UseReducerone= () => {
 
   return (
     <div>
-      <input type="text"  value={newItem} onChange={(e) => setNewItem(e.target.value)}
+      <input type="text" value={newItem} onChange={(e) => setNewItem(e.target.value)}
         placeholder="Enter item"
       />
       <button onClick={handleAddItem}>Add Item</button>

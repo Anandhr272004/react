@@ -32,6 +32,9 @@ import Click from './ustate/Click';
 import { Routes,Route } from 'react-router-dom';
 import Home from './Redux-task/Home';
 import User from './Redux-task/Users';
+import Postmethodone from './Postmethodone';
+import Example from './Example';
+import Usesttodo from './Usesttodo';
 function App() {
 
   return (
@@ -45,16 +48,20 @@ function App() {
       {/* <Useref/> */}
       {/* <UseRed /> */}
     {/* <Todo/> */}
-      {/* <ToggleText/>
-      <Todoust/>
-      <Timer/>
-      <Click/> */}
+       {/* <ToggleText/> */}
+       {/* <Example /> */}
+       {/* <Usesttodo /> */}
+       <Todoust />
+       {/* <Postmethodone /> */}
+      {/* <Todoust/> */}
+      {/* <Timer/>  */}
+       {/* <Click/>  */}
+      {/* <Formhooks/> */}
       
-      
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/user" element={<User />} />
-      </Routes>
+      </Routes> */}
     
 
       {/* <ToggleButton/> */}

@@ -24,11 +24,6 @@ const generateToken = () => {
     setApiError(null);
     setResponseData(null);
 
-    // Check if the credentials match predefined ones
-    // const predefinedEmail = 'mailto:eve.holt@reqres.in';
-    // const predefinedPassword = 'pistol';
-
-    // if (data.email === predefinedEmail && data.password === predefinedPassword) {
       try {
         const response = await fetch('https://reqres.in/api/register', {
           method: 'POST',
