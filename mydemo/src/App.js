@@ -30,15 +30,18 @@ import Todoust from './ustate/Todoust';
 import Timer from './ustate/Timer';
 import Click from './ustate/Click';
 import { Routes,Route } from 'react-router-dom';
-import Home from './Redux-task/Home';
+// import Home from './Redux-task/Home';
 import User from './Redux-task/Users';
 import Postmethodone from './Postmethodone';
 import Example from './Example';
 import Usesttodo from './Usesttodo';
+import Home from './Project/Home'
+import './Project/Home.css'
 function App() {
 
   return (
     <>
+    <Home />
     
      {/* <Counter /> */}
      {/* <City/> */}
@@ -51,7 +54,7 @@ function App() {
        {/* <ToggleText/> */}
        {/* <Example /> */}
        {/* <Usesttodo /> */}
-       <Todoust />
+       {/* <Todoust /> */}
        {/* <Postmethodone /> */}
       {/* <Todoust/> */}
       {/* <Timer/>  */}

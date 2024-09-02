@@ -1,0 +1,56 @@
+{
+    "brand": "Furni.",
+    "navLinks": [
+      { "id": 1, "name": "Home", "link": "/", "active": true },
+      { "id": 2, "name": "Shop", "link": "/shop", "active": false },
+      { "id": 3, "name": "About us", "link": "/about-us", "active": false },
+      { "id": 4, "name": "Services", "link": "/services", "active": false },
+      { "id": 5, "name": "Blog", "link": "/blog", "active": false },
+      { "id": 6, "name": "Contact us", "link": "/contact-us", "active": false }
+    ],
+    "header": {
+      "title": "Modern Interior Design Studio",
+      "subtitle": "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+      "buttons": [
+        { "id": 1, "name": "Shop Now", "style": "yellow", "link": "/shop" },
+        { "id": 2, "name": "Explore", "style": "gray", "link": "/explore" }
+      ]
+    },
+    "image": {
+      "src": "./image/couch.png",
+      "alt": "Sofa"
+    },
+    "icons": [
+      { "id": 1, "name": "user", "link": "/profile" },
+      { "id": 2, "name": "cart", "link": "/cart" }
+    ],
+    "productSection": {
+      "title": "Crafted with excellent material.",
+      "description": "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+      "button": { "name": "Explore", "style": "gray", "link": "/explore" },
+      "products": [
+        {
+          "id": 1,
+          "name": "Nordic Chair",
+          "price": "$50.00",
+          "image": "./image/couch.png",
+          "alt": "Nordic Chair"
+        },
+        {
+          "id": 2,
+          "name": "Kruzo Aero Chair",
+          "price": "$78.00",
+          "image": "./image/couch.png",
+          "alt": "Kruzo Aero Chair"
+        },
+        {
+          "id": 3,
+          "name": "Ergonomic Chair",
+          "price": "$43.00",
+          "image": "./image/couch.png",
+          "alt": "Ergonomic Chair"
+        }
+      ]
+    }
+  }
+  
