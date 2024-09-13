@@ -1,5 +1,6 @@
 
 import './App.css';
+import './Admin/Login.css'
 
 import Indexone from './Indexone';
 // import Model from './Model';
@@ -29,7 +30,7 @@ import ToggleText from './ustate/ToggleText';
 import Todoust from './ustate/Todoust';
 import Timer from './ustate/Timer';
 import Click from './ustate/Click';
-import { Routes,Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 // import Home from './Redux-task/Home';
 import User from './Redux-task/Users';
 import Postmethodone from './Postmethodone';
@@ -37,35 +38,39 @@ import Example from './Example';
 import Usesttodo from './Usesttodo';
 import Home from './Project/Home'
 import './Project/Home.css'
+import Login from './Admin/Login';
+import Signin from './Admin/Login';
 function App() {
 
   return (
     <>
-    <Home />
-    
-     {/* <Counter /> */}
-     {/* <City/> */}
+      {/* <Home /> */}
+
+      <Login />
+
+      {/* <Counter /> */}
+      {/* <City/> */}
       {/* <CityDrop/> */}
       {/* <ComponentsA /> */}
       {/* <UseReducerone /> */}
       {/* <Useref/> */}
       {/* <UseRed /> */}
-    {/* <Todo/> */}
-       {/* <ToggleText/> */}
-       {/* <Example /> */}
-       {/* <Usesttodo /> */}
-       {/* <Todoust /> */}
-       {/* <Postmethodone /> */}
+      {/* <Todo/> */}
+      {/* <ToggleText/> */}
+      {/* <Example /> */}
+      {/* <Usesttodo /> */}
+      {/* <Todoust /> */}
+      {/* <Postmethodone /> */}
       {/* <Todoust/> */}
       {/* <Timer/>  */}
-       {/* <Click/>  */}
+      {/* <Click/>  */}
       {/* <Formhooks/> */}
-      
+
       {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/user" element={<User />} />
       </Routes> */}
-    
+
 
       {/* <ToggleButton/> */}
       {/* <Usesttodo /> */}
@@ -77,7 +82,7 @@ function App() {
       {/* <Ref /> */}
       {/* <Model /> */}
       {/* <Todo/> */}
-     {/* <Cityes/> */}
+      {/* <Cityes/> */}
     </>
 
   );
