@@ -57,18 +57,20 @@
 
 import React, { useState } from 'react';
 import './Login.css';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  const Navigate=useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
     // Check if the username and password are correct
     if (username === 'admin' && password === 'admin') {
-      // Navigate to another page
-      window.location.href = '/dashboard'; // Change to your desired route
+      window.location.href = '/Admin-pannel';  // Navigate to another page
     } else {
       setError('Invalid username or password');
     }
@@ -113,7 +115,9 @@ const Login = () => {
             <div className="forgot-password">
               <a href="/forgot-password">Forgotten Password</a>
             </div>
-            <button type="submit" className="login-button">🔍 Login</button>
+            <button type="submit" className="login-button"
+            //  onClick={()=>Navigate("/Admin-pannel")}
+             >🔍 Login</button>
           </form>
         </div>
       </div>

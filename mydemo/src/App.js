@@ -1,94 +1,40 @@
-
-import './App.css';
-import './Admin/Login.css'
-
-import Indexone from './Indexone';
-// import Model from './Model';
-// import Context from './Context';
-// import Postmethod from './Postmethod';
-import Nav from './Routerbasic';
-import UseReducerone from './Usereduserone';
-import Counter from './Counterredux';
-import City from './City';
-import CityDrop from './CityDrop';
-import Cityes from './Cityes';
-import Getone from './Getone';
-import Routerone from './Routerone';
-import Ref from './Ref';
-import Model from './Model';
-import Todo from './Todo';
-import ComponentsA from './ComponentA';
-import UseRed from './UseRed';
-import ToggleButton from './Usest';
-// import Usesttodo from './Usesttodo';
-import Formhooks from './Form-hooks';
-import Form from './Form';
-import Frm from './Frm';
-import Usestate from './ustate/Usestate';
-import Useref from './Useref';
-import ToggleText from './ustate/ToggleText';
-import Todoust from './ustate/Todoust';
-import Timer from './ustate/Timer';
-import Click from './ustate/Click';
-import { Routes, Route } from 'react-router-dom';
-// import Home from './Redux-task/Home';
-import User from './Redux-task/Users';
-import Postmethodone from './Postmethodone';
-import Example from './Example';
-import Usesttodo from './Usesttodo';
-import Home from './Project/Home'
-import './Project/Home.css'
+import React ,{ useState } from 'react'
+import Header from './Admin/Header';
+import Sidebar from './Admin/Sidebar';
+import Homeie from './Admin/Homeie';
+import './../src/Admin/Admin-pannel.css'
+import Adminpannel from './Admin/Admin-pannel';
 import Login from './Admin/Login';
-import Signin from './Admin/Login';
+import './Admin/Login.css'
 function App() {
+  const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
+
+  const OpenSidebar = () => {
+    setOpenSidebarToggle(!openSidebarToggle)
+  }
 
   return (
     <>
-      {/* <Home /> */}
-
+      {/* <Header OpenSidebar={OpenSidebar}/>
+      <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/> */}
+      {/* <Homeie /> */}
+      {/* <Adminpannel /> */}
       <Login />
-
-      {/* <Counter /> */}
-      {/* <City/> */}
-      {/* <CityDrop/> */}
-      {/* <ComponentsA /> */}
-      {/* <UseReducerone /> */}
-      {/* <Useref/> */}
-      {/* <UseRed /> */}
-      {/* <Todo/> */}
-      {/* <ToggleText/> */}
-      {/* <Example /> */}
-      {/* <Usesttodo /> */}
-      {/* <Todoust /> */}
-      {/* <Postmethodone /> */}
-      {/* <Todoust/> */}
-      {/* <Timer/>  */}
-      {/* <Click/>  */}
-      {/* <Formhooks/> */}
-
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/user" element={<User />} />
-      </Routes> */}
-
-
-      {/* <ToggleButton/> */}
-      {/* <Usesttodo /> */}
-      {/* <Formhooks /> */}
-      {/* <Form /> */}
-      {/* <Frm /> */}
-      {/* <Usestate/> */}
-      {/* <Routerone/> */}
-      {/* <Ref /> */}
-      {/* <Model /> */}
-      {/* <Todo/> */}
-      {/* <Cityes/> */}
     </>
-
-  );
+  )
 }
 
-export default App;
+export default App
+
+
+
+
+
+
+
+
+
+
 
 
 //using props to show the output in the same screen
