@@ -1,11 +1,7 @@
 import React ,{ useState } from 'react'
-import Header from './Admin/Header';
-import Sidebar from './Admin/Sidebar';
-import Homeie from './Admin/Homeie';
 import './../src/Admin/Admin-pannel.css'
 import Adminpannel from './Admin/Admin-pannel';
 import Login from './Admin/Login';
-import './Admin/Login.css'
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
 
